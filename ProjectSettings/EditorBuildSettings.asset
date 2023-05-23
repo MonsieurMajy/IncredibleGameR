@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Starting Scene.unity
+    guid: 22abbbadbb3faab478bd957b08c03480
+  - enabled: 1
+    path: Assets/Scenes/heffernan.unity
+    guid: 196331c4177bb8ccc87c84e673ada336
   m_configObjects: {}
