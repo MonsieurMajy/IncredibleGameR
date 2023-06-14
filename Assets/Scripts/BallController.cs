@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public bool active;
+    private bool active;
 
     [SerializeField]
     private float magnitude_scale = 0.1f;
@@ -19,6 +19,14 @@ public class BallController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void activate() {
+        active = true;
+    }
+
+    public bool isActive() {
+        return active;
     }
 
     public void OnTriggerEnter (Collider collider) {

@@ -5,27 +5,35 @@ using UnityEngine;
 public class InputState : IState
 {
     //fields
-    Vector3 ball_pos;
     ClubController clubController;
 
-    //[SerializeField]
-    //GameObject ball;
+    [SerializeField]
+    GameObject pivot;
 
-    //[SerializeField]
-    //GameObject pivot;
+    [SerializeField]
+    GameObject club;
 
-    //[SerializeField]
-    //GameObject club;
+    [SerializeField]
+    GameObject clubBundle;
+
+    [SerializeField]
+    GameObject cameraPiv;
 
     public void OnEnter(StateController sc)
     { 
-        clubController = pivot.GetComponent<ClubController>();
-        ball_pos = ball.transform.position;
+        club = GameObject.FindGameObjectsWithTag("Club")[0];
+        pivot = GameObject.FindGameObjectsWithTag("Pivot")[0];
+        clubBundle = GameObject.FindGameObjectsWithTag("ClubBundle")[0];
+        cameraPiv = GameObject.FindGameObjectsWithTag("CameraPiv")[0];
 
+
+        clubController = pivot.GetComponent<ClubController>();
+
+        clubController.reset();
+        club.GetComponent<MeshRenderer>().enabled = true;
         club.GetComponent<MeshCollider>().enabled = false; //Deactivate the club collider
         club.GetComponent<BoxCollider>().enabled = true;
 
-        clubController.moveTo(ball_pos);
         clubController.show();
     }
     public void UpdateState(StateController sc)
@@ -34,7 +42,11 @@ public class InputState : IState
     }
     public void OnExit(StateController sc)
     {
+        club = GameObject.FindGameObjectsWithTag("Club")[0];
+
+        clubBundle.transform.SetParent(null);
         club.GetComponent<MeshCollider>().enabled = true;
         club.GetComponent<BoxCollider>().enabled = false;
+        club.GetComponent<BallController>().activate();
     }
 }

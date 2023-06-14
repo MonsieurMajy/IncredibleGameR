@@ -5,12 +5,12 @@ using UnityEngine;
 public class AwakeState : IState
 {
     //fields
-    //[SerializeField]
-    //GameObject club;
+    [SerializeField]
+    GameObject club;
 
     public void OnEnter(StateController sc)
     { 
-        //TODO: implement me!
+
     }
     public void UpdateState(StateController sc)
     {
@@ -18,6 +18,8 @@ public class AwakeState : IState
     }
     public void OnExit(StateController sc)
     {
+        club = GameObject.FindGameObjectsWithTag("Club")[0];
+
         club.GetComponent<MeshCollider>().enabled = false;
     }
 }

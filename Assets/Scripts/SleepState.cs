@@ -10,6 +10,7 @@ public class SleepState : IState
     public void OnEnter(StateController sc)
     { 
         GameObject.FindGameObjectsWithTag("Pivot")[0].GetComponent<ClubController>().reset();
+        GameObject.FindGameObjectsWithTag("Club")[0].GetComponent<MeshRenderer>().enabled = false;
     }
     public void UpdateState(StateController sc)
     {

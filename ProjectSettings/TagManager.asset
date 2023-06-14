@@ -7,6 +7,8 @@ TagManager:
   - Ball
   - Pivot
   - Club
+  - CameraPiv
+  - ClubBundle
   layers:
   - Default
   - TransparentFX

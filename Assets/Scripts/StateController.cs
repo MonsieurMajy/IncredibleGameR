@@ -35,6 +35,9 @@ public class StateController : MonoBehaviour
     public bool isAwake() {
         return currentState == awakeState;
     }
+    public bool isSleep() {
+        return currentState == sleepState;
+    }
 
     public void changeStateToSleep() {
         ChangeState(sleepState);
