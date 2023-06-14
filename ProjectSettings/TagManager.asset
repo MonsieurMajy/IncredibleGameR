@@ -4,11 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ball
   - Pivot
   - Club
   - CameraPiv
   - ClubBundle
+  - ball
+  - flag
+  - restartScreen
+  - boundaries
   layers:
   - Default
   - TransparentFX
