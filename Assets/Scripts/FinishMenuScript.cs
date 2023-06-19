@@ -10,7 +10,6 @@ public class FinishMenuScript : MonoBehaviour
 
     public void restartGame()
     {  
-        Console.WriteLine("in click");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         restartScreen.SetActive(false);
     }

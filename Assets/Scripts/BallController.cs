@@ -7,7 +7,7 @@ public class BallController : MonoBehaviour
     private bool active;
 
     [SerializeField]
-    private float magnitude_scale = 0.1f;
+    private float magnitude_scale = 0.9f;
 
     // Start is called before the first frame update
     void Start()

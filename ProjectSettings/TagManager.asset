@@ -8,10 +8,11 @@ TagManager:
   - Club
   - CameraPiv
   - ClubBundle
-  - ball
   - flag
   - restartScreen
   - boundaries
+  - Ball
+  - Score_text
   layers:
   - Default
   - TransparentFX
