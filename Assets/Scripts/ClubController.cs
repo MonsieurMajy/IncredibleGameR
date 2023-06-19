@@ -28,6 +28,8 @@ public class ClubController : MonoBehaviour
     [SerializeField]
     private Vector3 pivot_pos = new Vector3(0f, 2.55f, 0f);
 
+    private Vector3 clubToPivotPos;
+
     [SerializeField]
     private float rotation_speed = 1;
 
@@ -54,6 +56,9 @@ public class ClubController : MonoBehaviour
         dragScript = club_prop.GetComponent<DragBehaviour>();
         stateMachine = gameObject.GetComponent<StateController>();
         gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        pivot_pos = gameObject.transform.parent.gameObject.transform.position - ball.transform.position;
+        clubToPivotPos = gameObject.transform.localPosition;
+        reset();
     }
 
     // Update is called once per frame
@@ -85,11 +90,11 @@ public class ClubController : MonoBehaviour
                 timer = 0f;
             } else {
                 //Move to the right position ?
+                reset();
             }            
         } else if (stateMachine.isSleep()) {
             Debug.Log(ball.GetComponent<Rigidbody>().velocity.magnitude);
             if (ball.GetComponent<Rigidbody>().velocity.magnitude < velocityThreshold) {
-                //ball.GetComponent<Rigidbody>().velocity = 0;
                 stateMachine.changeStateToInput();
             }
         }
@@ -104,7 +109,8 @@ public class ClubController : MonoBehaviour
         gameObject.transform.parent.gameObject.transform.SetParent(GameObject.FindGameObjectsWithTag("CameraPiv")[0].transform);
         gameObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
         current_angle = 0;
-        gameObject.transform.position = new Vector3(ball.transform.position.x, pivot_pos.y, ball.transform.position.z);
+        gameObject.transform.parent.gameObject.transform.position = ball.transform.position + pivot_pos;
+        Debug.Log(gameObject.transform.localPosition);
     }
 
     public void show() {

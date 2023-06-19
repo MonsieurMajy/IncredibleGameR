@@ -29,7 +29,6 @@ public class InputState : IState
 
         clubController = pivot.GetComponent<ClubController>();
 
-        clubController.reset();
         club.GetComponent<MeshRenderer>().enabled = true;
         club.GetComponent<MeshCollider>().enabled = false; //Deactivate the club collider
         club.GetComponent<BoxCollider>().enabled = true;
