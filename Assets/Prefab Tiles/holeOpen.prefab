@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: -5754084199372789682}
   - component: {fileID: -7511558181221131132}
   - component: {fileID: 2093539764303521050}
+  - component: {fileID: 1324131752387335570}
+  - component: {fileID: 3299697549972898990}
   m_Layer: 0
   m_Name: holeOpen
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 9130136106455714099}
   m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 1.915152}
-  m_LocalScale: {x: 300, y: 600, z: 300}
+  m_LocalScale: {x: 800, y: 1600, z: 800}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,3 +102,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1484217041801112989, guid: c7d1d2c5da15651c9be05ba5258b1a85, type: 3}
+--- !u!136 &1324131752387335570
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9130136106455714099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0006
+  m_Height: 0.0009
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00017, z: -4.4996537e-18}
+--- !u!114 &3299697549972898990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9130136106455714099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70f821ea456b1d9f85c4b29c2be65e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartScreen: {fileID: 0}
+  quitMenu: {fileID: 0}
+  winDelay: 0.5
+  winSound: {fileID: 0}
