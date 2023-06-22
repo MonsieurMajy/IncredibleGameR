@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8191949640391800376}
   - component: {fileID: 8893391744426191659}
   - component: {fileID: 1368900513201613650}
+  - component: {fileID: 1669426133442773928}
   m_Layer: 5
   m_Name: Go to main menu
   m_TagString: Untagged
@@ -121,7 +122,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8893391744426191659}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1669426133442773928}
+        m_TargetAssemblyTypeName: ExitMenuScript, Assembly-CSharp
+        m_MethodName: goToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1669426133442773928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54851758945828074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c637b745195f41e729d655a1fbc47ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitMenu: {fileID: 7601614536121575932}
 --- !u!1 &896270013878216190
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +226,7 @@ GameObject:
   - component: {fileID: 1940370421199340963}
   - component: {fileID: 2830133654850339975}
   - component: {fileID: 757914232307762196}
+  - component: {fileID: 3186299652986353914}
   m_Layer: 5
   m_Name: Back to game
   m_TagString: Untagged
@@ -309,7 +336,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2830133654850339975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3186299652986353914}
+        m_TargetAssemblyTypeName: ExitMenuScript, Assembly-CSharp
+        m_MethodName: backToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3186299652986353914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981904944914947790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c637b745195f41e729d655a1fbc47ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitMenu: {fileID: 7601614536121575932}
 --- !u!1 &1766124629329262805
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +614,7 @@ GameObject:
   - component: {fileID: 5547249682261402213}
   - component: {fileID: 5076169702330542809}
   - component: {fileID: 377132837109663577}
+  - component: {fileID: 536843824140772393}
   m_Layer: 5
   m_Name: Save and Exit
   m_TagString: Untagged
@@ -671,7 +724,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5076169702330542809}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 536843824140772393}
+        m_TargetAssemblyTypeName: ExitMenuScript, Assembly-CSharp
+        m_MethodName: confirmExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &536843824140772393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826760165895995343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c637b745195f41e729d655a1fbc47ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitMenu: {fileID: 7601614536121575932}
 --- !u!1 &7079708360351389261
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +843,7 @@ GameObject:
   - component: {fileID: 7601614536121575934}
   - component: {fileID: 7601614536121575933}
   m_Layer: 5
-  m_Name: Exit dialogue
+  m_Name: quitMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

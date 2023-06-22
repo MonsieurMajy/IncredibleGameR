@@ -38,11 +38,15 @@ public class LogicScript : MonoBehaviour
 
 // for the pit hole collider
     public void OnTriggerEnter(Collider collider) {
-        winSound.Play();
-        Debug.Log("victory!");
-        //this.GetComponent<Renderer>().material.SetColor("_Color", UnityEngine.Random.ColorHSV(0f,1f,0.7f,1f,0.7f,1f));
-        isInPitHole = true;
-        StartCounter();
+        if (collider.CompareTag("Ball"))
+        {
+            winSound.Play();
+            Debug.Log("victory!");
+            //this.GetComponent<Renderer>().material.SetColor("_Color", UnityEngine.Random.ColorHSV(0f,1f,0.7f,1f,0.7f,1f));
+            isInPitHole = true;
+            StartCounter();
+        }
+        
        
     }
 

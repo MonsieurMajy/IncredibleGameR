@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6021378243930094503}
   - component: {fileID: 6021378243930094502}
   - component: {fileID: 2988601771071798134}
+  - component: {fileID: 3675467700009432739}
   m_Layer: 0
   m_Name: Golf ball
   m_TagString: Ball
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6021378243930094489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.47, y: 3.77, z: 5.4745502}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,3 +132,16 @@ MonoBehaviour:
   minSpeed: 0
   airCoefficient: 0
   ballBody: {fileID: 6021378243930094502}
+--- !u!114 &3675467700009432739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6021378243930094489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b37dc649eadcda8effcf0879f2f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitude_scale: 0.9
