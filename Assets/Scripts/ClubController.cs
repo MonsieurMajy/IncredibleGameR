@@ -15,7 +15,7 @@ public class ClubController : MonoBehaviour
     private GameObject club_prop;
 
     [SerializeField]
-    private GameObject ball;
+    public GameObject ball;
 
     private DragBehaviour dragScript;
 
@@ -93,7 +93,7 @@ public class ClubController : MonoBehaviour
                 reset();
             }            
         } else if (stateMachine.isSleep()) {
-            Debug.Log(ball.GetComponent<Rigidbody>().velocity.magnitude);
+            //Debug.Log(ball.GetComponent<Rigidbody>().velocity.magnitude);
             if (ball.GetComponent<Rigidbody>().velocity.magnitude < velocityThreshold) {
                 stateMachine.changeStateToInput();
             }
@@ -110,7 +110,7 @@ public class ClubController : MonoBehaviour
         gameObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
         current_angle = 0;
         gameObject.transform.parent.gameObject.transform.position = ball.transform.position + pivot_pos;
-        Debug.Log(gameObject.transform.localPosition);
+        //Debug.Log(gameObject.transform.localPosition);
     }
 
     public void show() {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraPivotBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private GameObject ball;
+    public GameObject ball;
 
     [SerializeField]
     private GameObject clubPivot;
