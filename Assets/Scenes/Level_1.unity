@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -887,6 +887,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8288367898749421082, guid: 7c7241114be0dbfa78bb25f057bf15bf, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 706b7c25b24973aa19de04a7016646f5, type: 2}
+    - target: {fileID: -3061861645505129845, guid: 7c7241114be0dbfa78bb25f057bf15bf, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3061861645505129845, guid: 7c7241114be0dbfa78bb25f057bf15bf, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 577520376848478778, guid: 7c7241114be0dbfa78bb25f057bf15bf, type: 3}
       propertyPath: m_Name
       value: strawberry
@@ -1896,6 +1908,10 @@ PrefabInstance:
       propertyPath: velocityThreshold
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4780378645983182039, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14
+      objectReference: {fileID: 0}
     - target: {fileID: 4780378646061990648, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
       propertyPath: ball
       value: 
@@ -1951,6 +1967,10 @@ PrefabInstance:
     - target: {fileID: 4780378646061990655, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780378647724093851, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5662776102957612031, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
       propertyPath: m_IsActive

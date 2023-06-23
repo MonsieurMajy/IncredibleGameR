@@ -6,7 +6,6 @@ public class SleepState : IState
 {
     //fields
 
-
     public void OnEnter(StateController sc)
     { 
         GameObject.FindGameObjectsWithTag("Club")[0].GetComponent<MeshRenderer>().enabled = false;
@@ -17,6 +16,6 @@ public class SleepState : IState
     }
     public void OnExit(StateController sc)
     {
-        //TODO: implement me!
+        //Nothing
     }
 }

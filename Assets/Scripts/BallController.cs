@@ -45,6 +45,8 @@ public class BallController : MonoBehaviour
             Vector3 force = pivot_script.global_strengh * magnitude_scale * direction;
             Debug.Log(force);
             otherGobj.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+
+            pivot_script.incrementSwings();
             }
         }
 }

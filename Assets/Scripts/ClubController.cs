@@ -41,7 +41,7 @@ public class ClubController : MonoBehaviour
 
     private float current_angle;
     private float timer;
-    private float awakening;
+    private int swingsCounter = 0;
 
     public float global_strengh;
 
@@ -58,6 +58,7 @@ public class ClubController : MonoBehaviour
         gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         pivot_pos = gameObject.transform.parent.gameObject.transform.position - ball.transform.position;
         clubToPivotPos = gameObject.transform.localPosition;
+        swingsCounter = 0;
         reset();
     }
 
@@ -81,21 +82,23 @@ public class ClubController : MonoBehaviour
                stateMachine.changeStateToSleep();
             }
         } else if (stateMachine.isInput()) {
-            if (dragScript.isDragging()) {
-                init_angle = Mathf.Abs(90 * dragScript.getY()/Screen.width);
-                angle_aimed = 360 * (dragScript.getX())/Screen.width;
+            if (dragScript.isDragging())
+            {
+                init_angle = Mathf.Abs(90 * dragScript.getY() / Screen.width);
+                angle_aimed = 360 * (dragScript.getX()) / Screen.width;
                 current_angle = init_angle; //The initial angle is shown
-            } else if(dragScript.isDragUp()) {
+            }
+            else if (dragScript.isDragUp())
+            {
                 stateMachine.changeStateToAwake();
                 timer = 0f;
-            } else {
-                //Move to the right position ?
-                reset();
-            }            
+            }
         } else if (stateMachine.isSleep()) {
             //Debug.Log(ball.GetComponent<Rigidbody>().velocity.magnitude);
             if (ball.GetComponent<Rigidbody>().velocity.magnitude < velocityThreshold) {
                 stateMachine.changeStateToInput();
+                reset();
+                reset();
             }
         }
 
@@ -106,11 +109,11 @@ public class ClubController : MonoBehaviour
     }
 
     public void reset() {
-        gameObject.transform.parent.gameObject.transform.SetParent(GameObject.FindGameObjectsWithTag("CameraPiv")[0].transform);
-        gameObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
         current_angle = 0;
         gameObject.transform.parent.gameObject.transform.position = ball.transform.position + pivot_pos;
-        //Debug.Log(gameObject.transform.localPosition);
+        gameObject.transform.parent.gameObject.transform.SetParent(GameObject.FindGameObjectsWithTag("CameraPiv")[0].transform);
+        gameObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        Debug.Log(gameObject.transform.parent.gameObject);
     }
 
     public void show() {
@@ -119,5 +122,15 @@ public class ClubController : MonoBehaviour
 
     public void hide() {
         gameObject.SetActive(false);
+    }
+
+    public void incrementSwings()
+    {
+        swingsCounter++;
+    }
+
+    public int getSwings()
+    {
+        return swingsCounter;
     }
 }
