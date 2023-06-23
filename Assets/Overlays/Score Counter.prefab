@@ -81,7 +81,7 @@ Canvas:
   m_GameObject: {fileID: 977296357993023136}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -455,12 +455,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8160317032921853987}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: BallSwitcher, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 6835546266013684936}
   - component: {fileID: 8337670379151552840}
   - component: {fileID: 5192798230746579876}
-  - component: {fileID: 2290319264422559526}
+  - component: {fileID: 3882725084303970899}
   m_Layer: 0
   m_Name: sound button
   m_TagString: Untagged
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2290319264422559526}
+      - m_Target: {fileID: 3882725084303970899}
         m_TargetAssemblyTypeName: SoundButton, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
@@ -773,7 +773,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2290319264422559526
+--- !u!114 &3882725084303970899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6628031467138447814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e77de1c9b87862a5be576527d651789, type: 3}
+  m_Script: {fileID: 11500000, guid: a142679009a3bbafda963655e38d055d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uncheckedSprite: {fileID: 21300000, guid: b28e1b4d5c56af6cdac7e05391a63355, type: 3}
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 2501197523177611639}
   - component: {fileID: 127578023147902325}
   - component: {fileID: 3209740992032365458}
-  - component: {fileID: 7982254580179196475}
+  - component: {fileID: 5557506429736130055}
   m_Layer: 0
   m_Name: music button
   m_TagString: Untagged
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7982254580179196475}
+      - m_Target: {fileID: 5557506429736130055}
         m_TargetAssemblyTypeName: SoundButton, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
@@ -922,7 +922,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7982254580179196475
+--- !u!114 &5557506429736130055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -931,7 +931,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7814631215928874192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e77de1c9b87862a5be576527d651789, type: 3}
+  m_Script: {fileID: 11500000, guid: a142679009a3bbafda963655e38d055d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uncheckedSprite: {fileID: 21300000, guid: 7814aa530cb7ad156940687709b7e67b, type: 3}

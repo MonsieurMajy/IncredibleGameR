@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SoundOnOffButton : MonoBehaviour
+public class SoundButton: MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Sprite uncheckedSprite;
+    public Sprite checkedSprite;
+
+    private Image buttonImage;
+    private bool isChecked = false;
+    public AudioSource musicAudioSource;
+
+    private void Start()
     {
-        
+        buttonImage = GetComponent<Image>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnButtonClick()
     {
-        
+        isChecked = !isChecked;
+
+        if (isChecked)
+        {
+            buttonImage.sprite = checkedSprite;
+            musicAudioSource.Stop();
+        }
+        else
+        {
+            buttonImage.sprite = uncheckedSprite;
+            musicAudioSource.Play();
+        }
     }
 }

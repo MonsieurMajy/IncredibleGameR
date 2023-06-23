@@ -20,6 +20,9 @@ public class ExitMenuScript : MonoBehaviour
         SceneManager.LoadScene("Level Menu");
     }
 
+    public void restartLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     void Update()
     {   
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -27,4 +30,5 @@ public class ExitMenuScript : MonoBehaviour
             backToGame();
         }     
     }
+
 }
