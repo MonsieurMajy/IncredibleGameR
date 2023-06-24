@@ -32,7 +32,7 @@ public class BallController : MonoBehaviour
     public void OnTriggerEnter (Collider collider) {
         GameObject otherGobj = collider.gameObject;
 
-        Debug.Log("Collision detected ! " + otherGobj);
+        //Debug.Log("Collision detected ! " + otherGobj);
 
         //Check if it is the club
         if (otherGobj.CompareTag("Ball") & active)

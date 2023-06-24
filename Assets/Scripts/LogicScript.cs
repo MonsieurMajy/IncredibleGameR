@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System;
+
 
 public class LogicScript : MonoBehaviour
 {
@@ -23,7 +19,6 @@ public class LogicScript : MonoBehaviour
     {   
         if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q)))
         {   
-            Console.WriteLine("pressed exit");
             Time.timeScale = 0;
             quitMenu.SetActive(true);
         }      
