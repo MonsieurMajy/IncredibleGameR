@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {   
-    public int availableLevels = 4;
+    public static int availableLevels = 4;
 }

@@ -81,7 +81,7 @@ Canvas:
   m_GameObject: {fileID: 977296357993023136}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -168,8 +168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85.044586, y: -3.1499329}
-  m_SizeDelta: {x: 91.3522, y: 48.9203}
+  m_AnchoredPosition: {x: 65, y: 1}
+  m_SizeDelta: {x: 34.3217, y: 48.9203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1221068285008021076
 CanvasRenderer:
@@ -201,7 +201,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8, type: 3}
-    m_FontSize: 35
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -328,8 +328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -468, y: 244}
-  m_SizeDelta: {x: 261.44153, y: 55.22711}
+  m_AnchoredPosition: {x: -305.9115, y: 157}
+  m_SizeDelta: {x: 171.6185, y: 55.2271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4211289033145012052
 GameObject:
@@ -369,7 +369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 249}
+  m_AnchoredPosition: {x: 0, y: 156}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1310206647182182142
@@ -514,8 +514,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45.675293, y: 0}
-  m_SizeDelta: {x: 170.0908, y: 55.2271}
+  m_AnchoredPosition: {x: -14, y: 0}
+  m_SizeDelta: {x: 130.72, y: 55.2271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7590126124278650119
 CanvasRenderer:
@@ -547,7 +547,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7814aa530cb7ad156940687709b7e67b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -676,8 +676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 545, y: 250}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 372, y: 155}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6835546266013684936
 CanvasRenderer:
@@ -763,7 +763,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3882725084303970899}
         m_TargetAssemblyTypeName: SoundButton, Assembly-CSharp
-        m_MethodName: OnButtonClick
+        m_MethodName: NoisesAudioSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -825,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445, y: 250}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 320, y: 155}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2501197523177611639
 CanvasRenderer:
@@ -912,7 +912,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5557506429736130055}
         m_TargetAssemblyTypeName: SoundButton, Assembly-CSharp
-        m_MethodName: OnButtonClick
+        m_MethodName: NoisesAudioSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

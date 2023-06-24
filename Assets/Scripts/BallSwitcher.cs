@@ -20,6 +20,7 @@ public class BallSwitcher : MonoBehaviour
             if (i != index)
             {
                 balls[i].SetActive(false);
+                balls[i].tag = "Untagged";
             }
 
         }
@@ -35,6 +36,8 @@ public class BallSwitcher : MonoBehaviour
         Debug.Log("index,"+index+" prevIndex, "+prevIndex+"max, "+max);
         UpdateReferences(balls[prevIndex], balls[index]);
         balls[index].transform.position = currentBall.transform.position;
+        balls[prevIndex].tag = "Untagged";
+        balls[index].tag = "Ball";
         currentBall = balls[index];
         currentBall.SetActive(true);
     }

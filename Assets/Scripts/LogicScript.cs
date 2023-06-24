@@ -11,7 +11,7 @@ public class LogicScript : MonoBehaviour
     public GameObject quitMenu;
     private bool isInPitHole = false;
     private float counter = 0;
-    public float winDelay = 0.5f;
+    public float winDelay = 0.3f;
 
     [SerializeField] private AudioSource winSound;
     // Update is called once per frame
@@ -40,8 +40,7 @@ public class LogicScript : MonoBehaviour
     public void OnTriggerEnter(Collider collider) {
         if (collider.CompareTag("Ball"))
         {
-            winSound.Play();
-            Debug.Log("victory!");
+            if(SoundButton.noisesAudioActivated){ winSound.Play(); }
             //this.GetComponent<Renderer>().material.SetColor("_Color", UnityEngine.Random.ColorHSV(0f,1f,0.7f,1f,0.7f,1f));
             isInPitHole = true;
             StartCounter();
@@ -69,6 +68,6 @@ public class LogicScript : MonoBehaviour
     private void IncrementCounter()
     {
         counter += Time.deltaTime;
-        Debug.Log(counter);
+        //Debug.Log(counter);
     }
 }
