@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 33d4f2fdf50a64e46a4e1a6feaba7f13, type: 3}
       propertyPath: m_TagString
-      value: Ball
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33d4f2fdf50a64e46a4e1a6feaba7f13, type: 3}
       propertyPath: m_RootOrder
