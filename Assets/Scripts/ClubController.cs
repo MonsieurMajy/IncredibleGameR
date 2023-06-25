@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ClubState {
     INPUT,
@@ -84,7 +85,7 @@ public class ClubController : MonoBehaviour
         } else if (stateMachine.isInput()) {
             if (dragScript.isDragging())
             {
-                init_angle = Mathf.Abs(90 * dragScript.getY() / Screen.width);
+                init_angle = Mathf.Abs(90 * dragScript.getY() / (0.3f*Screen.width));
                 angle_aimed = 360 * (dragScript.getX()) / Screen.width;
                 current_angle = init_angle; //The initial angle is shown
             }
@@ -127,10 +128,6 @@ public class ClubController : MonoBehaviour
     public void incrementSwings()
     {
         swingsCounter++;
-    }
-
-    public int getSwings()
-    {
-        return swingsCounter;
+        GameObject.FindGameObjectWithTag("Score_text").GetComponent<Text>().text = swingsCounter.ToString();
     }
 }
