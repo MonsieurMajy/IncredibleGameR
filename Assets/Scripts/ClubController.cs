@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ClubState {
     INPUT,
@@ -41,7 +42,7 @@ public class ClubController : MonoBehaviour
 
     private float current_angle;
     private float timer;
-    private float awakening;
+    private int swings;
 
     public float global_strengh;
 
@@ -58,6 +59,7 @@ public class ClubController : MonoBehaviour
         gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         pivot_pos = gameObject.transform.parent.gameObject.transform.position - ball.transform.position;
         clubToPivotPos = gameObject.transform.localPosition;
+        swings = 0;
         reset();
     }
 
@@ -82,7 +84,7 @@ public class ClubController : MonoBehaviour
             }
         } else if (stateMachine.isInput()) {
             if (dragScript.isDragging()) {
-                init_angle = Mathf.Abs(90 * dragScript.getY()/Screen.width);
+                init_angle = Mathf.Abs(90 * dragScript.getY()/(0.3f*Screen.width));
                 angle_aimed = 360 * (dragScript.getX())/Screen.width;
                 current_angle = init_angle; //The initial angle is shown
             } else if(dragScript.isDragUp()) {
@@ -119,5 +121,11 @@ public class ClubController : MonoBehaviour
 
     public void hide() {
         gameObject.SetActive(false);
+    }
+
+    public void increaseSwings()
+    {
+        swings++;
+        GameObject.FindGameObjectWithTag("Score_text").GetComponent<Text>().text = swings.ToString();
     }
 }
