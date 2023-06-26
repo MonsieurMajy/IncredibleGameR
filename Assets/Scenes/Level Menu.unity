@@ -1181,7 +1181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22548e9766f8f76b491ddbc891ebc3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quitMenu: {fileID: 0}
+  quitMenu: {fileID: 47847148877823660}
+  creditsMenu: {fileID: 1997803984}
 --- !u!114 &730933884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,6 +1616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quitMenu: {fileID: 47847148877823660}
+  creditsMenu: {fileID: 1997803984}
 --- !u!114 &1097921162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2279,8 +2281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 872, y: 361}
-  m_SizeDelta: {x: 60, y: 60}
+  m_AnchoredPosition: {x: 860, y: 345}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518180646
 MonoBehaviour:
@@ -2364,7 +2366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2525,8 +2527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000026226, y: -38.8}
-  m_SizeDelta: {x: 94.1776, y: 39.3337}
+  m_AnchoredPosition: {x: 0, y: -71}
+  m_SizeDelta: {x: 135.548, y: 51.1539}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658118088
 MonoBehaviour:
@@ -2550,7 +2552,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2561,7 +2563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: credits
+  m_Text: Credits
 --- !u!222 &1658118089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2735,8 +2737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 900, y: 380}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 860, y: 345}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684221682
 MonoBehaviour:
@@ -3905,7 +3907,7 @@ GameObject:
   - component: {fileID: 1763166215014539624}
   - component: {fileID: 1349967402132208763}
   - component: {fileID: 8874606247079525378}
-  - component: {fileID: 9150574085313664248}
+  - component: {fileID: 8874606247079525379}
   m_Layer: 5
   m_Name: back to menu
   m_TagString: Untagged
@@ -4054,9 +4056,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9150574085313664248}
-        m_TargetAssemblyTypeName: ExitMenuScript, Assembly-CSharp
-        m_MethodName: backToGame
+      - m_Target: {fileID: 8874606247079525379}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: backToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4066,6 +4068,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8874606247079525379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572099074973576122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22548e9766f8f76b491ddbc891ebc3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitMenu: {fileID: 47847148877823660}
+  creditsMenu: {fileID: 1997803984}
 --- !u!222 &8957964823195793223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4094,16 +4110,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9150574085313664248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7572099074973576122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c637b745195f41e729d655a1fbc47ab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  exitMenu: {fileID: 47847148877823660}

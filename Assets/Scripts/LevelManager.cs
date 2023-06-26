@@ -6,9 +6,12 @@ public class LevelManager : MonoBehaviour
 {   
     public static int availableLevels = 5;
     public GameObject quitMenu;
+    public GameObject creditsMenu;
 
-    void Start(){
+    void Start()
+    {
         quitMenu.SetActive(false);
+        creditsMenu.SetActive(false);
     }
      void Update()
     {   
@@ -16,5 +19,10 @@ public class LevelManager : MonoBehaviour
         {   
             quitMenu.SetActive(true);
         }
+    }
+
+    public void backToMenu(){
+        quitMenu.SetActive(false);
+        creditsMenu.SetActive(false);
     }
 }
