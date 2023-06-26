@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -369,6 +369,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3675467700009432739, guid: 42ee4f5985b350730ab5ae8032227f0a, type: 3}
+      propertyPath: clubType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6021378243930094489, guid: 42ee4f5985b350730ab5ae8032227f0a, type: 3}
       propertyPath: m_Name
       value: Golf ball
@@ -427,9 +431,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4780378645776786112, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: red
+      value: 
+      objectReference: {fileID: -2870021472586168505, guid: a4b65a761ce5c5b51a4aadc63638695d, type: 3}
+    - target: {fileID: 4780378645776786112, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
       propertyPath: ball
       value: 
       objectReference: {fileID: 1352725013}
+    - target: {fileID: 4780378645776786112, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 7770318624900243041, guid: 4b9a5e8a5b0ed63c4a0fda3d665780a1, type: 3}
+    - target: {fileID: 4780378645776786112, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: green
+      value: 
+      objectReference: {fileID: 1151844921754575795, guid: a97d52f9384e1e33b88177f860fed86d, type: 3}
     - target: {fileID: 4780378645776786113, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -506,6 +522,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraPivot
       objectReference: {fileID: 0}
+    - target: {fileID: 6167332986467670570, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 7770318624900243041, guid: 4b9a5e8a5b0ed63c4a0fda3d665780a1, type: 3}
+    - target: {fileID: 8246710927247060704, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1587183215066290270, guid: 4b9a5e8a5b0ed63c4a0fda3d665780a1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5afeace7fcf4141a8bf9675c6099ec6, type: 3}
 --- !u!1001 &509937629
@@ -1638,6 +1662,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackgroundAudioSwitch
       objectReference: {fileID: 0}
+    - target: {fileID: 3432474423471177956, guid: a64b53522c63561debcd9c0b3ae781bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3882725084303970899, guid: a64b53522c63561debcd9c0b3ae781bc, type: 3}
       propertyPath: musicAudioSource
       value: 
@@ -1686,5 +1714,9 @@ PrefabInstance:
       propertyPath: balls.Array.data[1]
       value: 
       objectReference: {fileID: 618375514}
+    - target: {fileID: 8495695221907202649, guid: a64b53522c63561debcd9c0b3ae781bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a64b53522c63561debcd9c0b3ae781bc, type: 3}

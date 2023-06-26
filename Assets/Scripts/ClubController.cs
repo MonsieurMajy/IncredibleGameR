@@ -8,6 +8,12 @@ public enum ClubState {
     AWAKE,
     SPLEEPING
 }
+public enum CLUB_TYPE
+{
+    PUTTER,
+    WEDGE,
+    IRON,
+}
 
 public class ClubController : MonoBehaviour
 {
@@ -40,6 +46,18 @@ public class ClubController : MonoBehaviour
     [SerializeField]
     private float velocityThreshold = 0.001f;
 
+    [SerializeField]
+    private CLUB_TYPE clubType;
+
+    [SerializeField]
+    private Material blue;
+
+    [SerializeField]
+    private Material green;
+
+    [SerializeField]
+    private Material red;
+
     private float current_angle;
     private float timer;
     private int swings;
@@ -60,6 +78,8 @@ public class ClubController : MonoBehaviour
         pivot_pos = gameObject.transform.parent.gameObject.transform.position - ball.transform.position;
         clubToPivotPos = gameObject.transform.localPosition;
         swings = 0;
+        GameObject.FindGameObjectWithTag("type_text").GetComponent<Text>().text = "PUTTER";
+        clubType = CLUB_TYPE.PUTTER;
         reset();
     }
 
@@ -127,5 +147,36 @@ public class ClubController : MonoBehaviour
     {
         swings++;
         GameObject.FindGameObjectWithTag("Score_text").GetComponent<Text>().text = swings.ToString();
+    }
+
+    public void switchClub()
+    {
+        MeshRenderer meshRenderer = club_prop.GetComponent<MeshRenderer>();
+        Material[] materials = meshRenderer.materials;
+        
+        switch (clubType)
+        {
+            case CLUB_TYPE.WEDGE:
+                clubType = CLUB_TYPE.IRON;
+                materials[1] = red;
+                break;
+            case CLUB_TYPE.IRON:
+                clubType = CLUB_TYPE.PUTTER;
+                materials[1] = blue;
+                break;
+            case CLUB_TYPE.PUTTER:
+                clubType = CLUB_TYPE.WEDGE;
+                materials[1] = green;
+                break;
+        }
+
+        meshRenderer.materials = materials;
+
+        GameObject.FindGameObjectWithTag("type_text").GetComponent<Text>().text = clubType.ToString();
+    }
+
+    public CLUB_TYPE getClubType()
+    {
+        return clubType;
     }
 }

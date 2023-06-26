@@ -13,6 +13,7 @@ TagManager:
   - boundaries
   - Ball
   - Score_text
+  - type_text
   layers:
   - Default
   - TransparentFX

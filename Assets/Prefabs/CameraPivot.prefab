@@ -54,6 +54,10 @@ MonoBehaviour:
   rotation_speed: 2.5
   swing_amplitude: 0.8
   velocityThreshold: 0.001
+  clubType: 0
+  blue: {fileID: 7770318624900243041, guid: 4b9a5e8a5b0ed63c4a0fda3d665780a1, type: 3}
+  green: {fileID: 1151844921754575795, guid: a97d52f9384e1e33b88177f860fed86d, type: 3}
+  red: {fileID: -2870021472586168505, guid: a4b65a761ce5c5b51a4aadc63638695d, type: 3}
   global_strengh: 2
 --- !u!114 &4780378645776786119
 MonoBehaviour:
@@ -361,18 +365,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1587183215066290270, guid: 4b9a5e8a5b0ed63c4a0fda3d665780a1, type: 3}
---- !u!114 &4780378647724093855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662776102957612031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbfc4b87226e4e07a9e48531419cb1c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4780378647724093848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,3 +378,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnitude_scale: 0.2
+--- !u!114 &4780378647724093855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662776102957612031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfc4b87226e4e07a9e48531419cb1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
