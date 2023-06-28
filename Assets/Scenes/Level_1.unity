@@ -267,7 +267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 30
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalScale.y
@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.9
+      value: -6.18
       objectReference: {fileID: 0}
     - target: {fileID: 5057600652994395930, guid: 22303038222100eaf9004cc6587bf11f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1751,6 +1751,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1324131752387335570, guid: 6d05f4f13739a65fb8aa3fba7b4928cf, type: 3}
+      propertyPath: m_Radius
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324131752387335570, guid: 6d05f4f13739a65fb8aa3fba7b4928cf, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -1762,6 +1766,10 @@ PrefabInstance:
       propertyPath: restartScreen
       value: 
       objectReference: {fileID: 176220613}
+    - target: {fileID: 6192211087079210565, guid: 6d05f4f13739a65fb8aa3fba7b4928cf, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6711472458373561935, guid: 6d05f4f13739a65fb8aa3fba7b4928cf, type: 3}
       propertyPath: m_RootOrder
       value: 13
